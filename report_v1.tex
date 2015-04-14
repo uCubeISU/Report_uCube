@@ -1,0 +1,67 @@
+\documentclass[letterpaper,11pt,oneside]{report}
+
+%\usepackage{../shared/seniordesign}
+\usepackage{acronym}
+%\usepackage[framed,autolinebreaks,useliterate]{mcode}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+\usepackage{rotating}
+
+\title{Final Document}
+
+
+\begin{document}
+\DeclareGraphicsExtensions{.jpg,.pdf, .mps, .png}
+\maketitle
+
+\begin{abstract}
+	This project was incredible.
+\end{abstract}
+
+\newpage
+\tableofcontents
+
+\newpage
+\listoffigures
+
+\newpage
+\listoftables
+
+\chapter*{List of Acronyms}
+\addcontentsline{toc}{chapter}{List of Arcronyms}
+	\begin{acronym}
+		\acro{BOM}{Bill of Materials}
+		\acro{EM}{Electromagnetic}
+		\acro{I2C}{I I C}
+	\end{acronym}
+
+\chapter*{Preface}
+\addcontentsline{toc}{chapter}{Preface}
+\include{preface/preface}
+
+\chapter*{Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+%\include{preface/acknowledgements}
+
+\chapter*{Summary}
+\addcontentsline{toc}{chapter}{summary}
+%\mainmatter %WTF??
+%\include{preface/summary}
+%Intro
+\include{introduction/introduction}
+%Research
+\include{research/research}
+%Testing
+\include{testing/testing}
+%Design
+\include{design/design}
+%Conclusion	
+\include{conclusion/conclusion}
+%Appendices	
+\include{appendices/appendice-A}
+	
+
+
+\end{document}
